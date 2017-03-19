@@ -1,12 +1,10 @@
-##p2 README
-
-compile and link<br />
+Compile and Link<br />
 	$ make
 
-run<br />
+Run<br />
 	$ ./lab08
 
-remove<br />
+Remove<br />
 	$ make clean
 
 =======================Files<br />
@@ -24,11 +22,14 @@ README.md<br />
 	todo list.
 
 =======================todo list<br />
-github<br />
+Github<br />
 	understand the basics of github<br />
 <br />
-
-creation<br />
+<br />
+Completed<br />
+<br />
+(0) Create the REPO<br />
+How the Repo was created<br />
 echo "# p2" >> README.md<br />
 git init<br />
 git add README.md<br />
@@ -36,8 +37,12 @@ git commit -m "first commit"<br />
 git remote add origin https://github.com/mxd369/p2.git<br />
 git push -u origin master<br />
 <br />
+<br />
+Add untracked files, commit the changes, push to the origin<br/>
 $ git add .<br />
 $ git commit -m "details about the commit"<br />
 $ git push -u origin<br />
 <br />
-get started on the project# p2<br />
+<br />
+<br />
+Uncomplete<br />
