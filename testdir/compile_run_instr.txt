@@ -1,0 +1,111 @@
+------------------------------arrowkeys.c
+gcc arrowkeys.c -lncurses -o arrowkeys
+./arrowkeys
+
+------------------------------diskwin.c
+gcc diskwin.c -lncurses -o diskwin
+./diskwin
+
+------------------------------dump.c writes to .txt, but file is unreadable
+gcc dump.c -lncurses -o dump
+./dump
+
+------------------------------flush1.c uses a buffer, hit enter displays buffer
+gcc flush1.c -lncurses -o flush1
+./flush1
+
+------------------------------flush2.c same as flush1
+gcc flush2.c -lncurses -o flush2
+./flush2
+
+------------------------------getmouse.c gets x, y coordinate of mouse click
+gcc getmouse.c -lncurses -o getmouse
+./getmouse
+
+------------------------------getwin.c reads from a file
+gcc getwin.c -lncurses -o getwin
+./getwin
+
+------------------------------helpmenu1.c useless menu
+gcc helpmenu1.c -lncurses -o helpmenu1
+./helpmenu1
+
+------------------------------helpmenu2.c
+gcc helpmenu2.c -lncurses -o helpmenu2
+./helpmenu2
+
+------------------------------helpmenu3.c
+gcc helpmenu3.c -lncurses -o helpmenu3
+./helpmenu3
+
+------------------------------kid1.c
+gcc kid1.c -lncurses -o kid1
+./kid1
+
+------------------------------kid2.c
+gcc kid2.c -lncurses -o kid2
+./kid2
+
+------------------------------kid3.c
+gcc kid3.c -lncurses -o kid3
+./kid3
+
+------------------------------kid4.c
+gcc kid4.c -lncurses -o kid4
+./kid4
+
+------------------------------kid5.c
+gcc kid5.c -lncurses -o kid5
+./kid5
+
+------------------------------menubar.c
+gcc menubar.c -lncurses -o menubar
+./menubar
+
+------------------------------mevent.c
+gcc mevent.c -lncurses -o mevent
+./mevent
+
+------------------------------mouse_trafo.c
+gcc mouse_trafo.c -lncurses -o mouse_trafo
+./mouse_trafo
+
+------------------------------move.c
+gcc move.c -lncurses -o move
+./move
+
+------------------------------mvderwin.c
+gcc mvderwin.c -lncurses -o mvderwin
+./mvderwin
+
+------------------------------mvwim.c
+gcc mvwim.c -lncurses -o mvwim
+./mvwin
+
+------------------------------putwin.cpp
+gcc putwin.c -lncurses -o putwin
+./putwin
+
+------------------------------redrawwin.c
+gcc redrawwin.c -lncurses -o redrawwin
+./redrawwin
+
+------------------------------resizeterm.c
+gcc resizeterm.c -lncurses -o resizeterm
+./resizeterm
+
+------------------------------scrl.c
+gcc scrl.c -lncurses -o scrl
+./scrl
+
+------------------------------subpad.c
+gcc subpad.c -lncurses -o subpad
+./subpad
+
+------------------------------undump.c
+gcc undump.c -lncurses -o undump
+./undump
+
+------------------------------windisk.c
+gcc windisk.c -lncurses -o windisk
+./windisk
