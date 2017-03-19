@@ -3,7 +3,7 @@
 int main()
 {
 	initscr();
-	printw("Bye World!");
+	printw("CSCI 1730 Editor!");
 	refresh();
 	getch();
 	endwin();
