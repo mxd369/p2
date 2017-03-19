@@ -45,4 +45,8 @@ $ git push -u origin<br />
 <br />
 <br />
 <br />
-Uncomplete<br />
+Incomplete<br />
+1 Working TUI<br />
+2 F1 Menu<br />
+3 Extra Credit<br />
+OOP organization<br />
