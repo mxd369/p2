@@ -1,41 +1,41 @@
-compile and link
+compile and link<br />
 	$ make
 
-run
+run<br />
 	$ ./lab08
 
-remove
+remove<br />
 	$ make clean
 
-=======================Files
-p2.cpp
-	contains main function.
+=======================Files<br />
+p2.cpp<br />
+	contains main function.<br />
 
-testdir/
+testdir/<br />
 	contains code that could be used.
 
-Makefile
+Makefile<br />
 	compiles and links the code.
 
-README.md
-	contains compile/execute/run instructions,
+README.md<br />
+	contains compile/execute/run instructions,<br />
 	todo list.
 
-=======================todo list
-github
-	understand the basics of github
+=======================todo list<br />
+github<br />
+	understand the basics of github<br />
+<br />
 
-
-creation
-echo "# p2" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/mxd369/p2.git
-git push -u origin master
-
-$ git add .
-$ git commit -m "details about the commit"
-$ git push -u origin
-
-get started on the project# p2
+creation<br />
+echo "# p2" >> README.md<br />
+git init<br />
+git add README.md<br />
+git commit -m "first commit"<br />
+git remote add origin https://github.com/mxd369/p2.git<br />
+git push -u origin master<br />
+<br />
+$ git add .<br />
+$ git commit -m "details about the commit"<br />
+$ git push -u origin<br />
+<br />
+get started on the project# p2<br />
