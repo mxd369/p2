@@ -113,3 +113,20 @@ gcc undump.c -lncurses -o undump
 ------------------------------windisk.c
 gcc windisk.c -lncurses -o windisk
 ./windisk
+
+------------------------------windrop.c
+$ gcc windrop.c -lncurses -o windrop
+$ ./windrop
+
+
+
+-------------------------------03/19/17
+
+
+recently added
+
+
+pnoutrefresh.c
+prefresh.c
+printw.c
+putwin.c
