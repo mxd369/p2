@@ -82,6 +82,10 @@ gcc mvderwin.c -lncurses -o mvderwin
 gcc mvwim.c -lncurses -o mvwim
 ./mvwin
 
+------------------------------paddy1.c
+gcc paddy1.c -lncurses -o paddy1
+./paddy1
+
 ------------------------------putwin.cpp
 gcc putwin.c -lncurses -o putwin
 ./putwin
