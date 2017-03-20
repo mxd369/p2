@@ -1,3 +1,4 @@
+===========Basic Git Workflow
 
 git init 	// creates a new Git repository
 
@@ -11,3 +12,176 @@ git commit 	// permanently stores file changes from the staging area in the repo
 
 git log 	// shows a list of all previous commits
 
+
+===========Backtracking
+
+git checkout HEAD filename	// Discards changes in the working directory.
+
+git reset HEAD filename		// Unstages file changes in the staging area.
+
+git reset SHA				// Can be used to reset to a previous commit in your commit history.
+
+Add multiple files to the staging area with 1 command:
+	git add filename_1 filename_2
+
+===========Git Branching
+
+git branch					// Lists all a Git project's branches.
+
+git branch branch_name		// Creates a new branch.
+
+git checkout branch_name	// Used to switch from one branch to another.
+
+git merge branch_name		// Used to join file changes from one branch to another.
+
+git branch -d branch_name	// Deletes the branch specified.
+
+===========Git Teamwork
+
+===overview
+In order to collaborate, personA and personB need:
+
+A complete replica of the project on your own computers
+A way to keep track of and review each other's work
+Access to a definitive project version
+You can accomplish all of this by using remotes.
+A remote is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations.
+Collaborators work on the project independently, and merge changes together when they are ready to do so.
+
+===git clone
+
+create a clone(replica): // clone a remote repository
+	git clone remote_location clone_name
+
+remote_location:		//tells Git where to go to find the remote. address/filepath
+	/Users/teachers/Documents/some-remote
+
+			name_of_remote	your_custom_name
+$ git clone science_quizzes my-quizzes
+// my-quizzes is your local copy of the science-quizzes Git project
+
+===git remote -v
+
+see a list of a Git project's remotes with the command:
+	git remote -v
+
+$ cd my-quizzes
+
+files
+  my-quizzes/
+    chemistry.txt
+    physics.txt
+  science-quizzes/
+    chemistry.txt
+    physics.txt
+
+
+
+$ git remote -v
+origin /home/ccuser/workspace/curriculum/science-quizzes (fetch)
+origin /home/ccuser/workspace/curriculum/science-quizzes (push)
+
+
+Git lists the name of the remote, origin, as well as its location.
+Git automatically names this remote origin, it refers to the remote repo of origin.
+It is possible to safely change its name.
+The remote is listed twice: once for (fetch) and once for (push).
+
+===git fetch
+
+Fetch any new changes personA may have made to the remote.
+
+$ cd my-quizzes
+$ git fetch
+
+===git merge **Incomplete
+
+Even though Sally's new commits have been fetched to your local copy of the Git project, those commits are on the origin/master branch. Your local master branch has not been updated yet, so you can't view or make changes to any of the work she has added.
+
+In Lesson III, Git Branching we learned how to merge braches. Now we'll use the git merge command to integrate origin/master into your local master branch. The command:
+
+git merge origin/master
+will accomplish this for us.
+Instructions
+1.
+Enter this command:
+
+cd my-quizzes
+to go into the my-quizzes directory.
+2.
+You are on your local master branch. In your commit history, the commit message of the HEAD commit is:
+
+Add first question to Physics     quiz
+From the terminal, merge with origin/master, where Sally's most recent commits are.
+
+Notice the output:
+
+Updating a2ba090..bc87a1a
+Fast-forward
+ biology.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Git has performed a "fast-forward" merge, bringing your local master branch up to speed with Sally's most recent commit on the remote.
+3.
+Print the commit history.
+
+In the output, notice that the HEAD commit has changed. The commit message now reads:
+
+ Add heading and comment to biology quiz
+
+===git workflow
+
+Now that you've merged origin/master into your local master branch, you're ready to contribute some work of your own. The workflow for Git collaborations typically follows this order:
+
+Fetch and merge changes from the remote
+Create a branch to work on a new project feature
+Develop the feature on your branch and commit your work
+Fetch and merge from the remote again (in case new commits were made while you were working)
+Push your branch up to the remote for review
+Steps 1 and 4 are a safeguard against merge conflicts, which occur when two branches contain file changes that cannot be merged with the git merge command. Step 5 involves git push, a command you will learn in the next exercise.
+Instructions
+1.
+Enter this command:
+
+cd my-quizzes
+to change directories into the my-quizzes directory.
+2.
+Enter the Git command:
+
+git branch <branch_name>
+to create a branch to develop questions for the biology quiz. Name the branch bio-questions.
+
+Note: be careful to spell the name "bio-questions" exactly as it appears.
+3.
+Switch to your new branch with the command:
+
+git checkout <branch_name>
+replacing <branch_name> with the name of the new branch.
+4.
+On your branch, open biology.txt in the code editor.
+
+Add a biology question to the file and some sample answers. For example:
+
+  What is an animal that hunts and eats other animals called?
+  a) herbivore
+  b) prey 
+  c) ecosystem 
+  d) predator
+5.
+Add biology.txt to the staging area.
+6.
+Commit the work to the repository with a commit message.
+
+===generalizations
+
+A remote is a Git repository that lives outside your Git project folder.
+Remotes can live on the web, on a shared network or even in a separate folder on your local computer.
+
+The Git Collaborative Workflow are steps that enable smooth project development when multiple collaborators are working on the same Git project.
+
+Commands
+
+git clone: Creates a local copy of a remote.
+git remote -v: Lists a Git project's remotes.
+git fetch: Fetches work from the remote into the local copy.
+git merge origin/master: Merges origin/master into your local branch.
+git push origin <branch_name>: Pushes a local branch to the origin remote.
